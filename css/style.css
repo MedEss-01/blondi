@@ -1,0 +1,241 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	scroll-behavior: smooth;
+}
+:root {
+	--dark-blue: #19283f;
+	--blue-ciel: #00c6bf;
+	--button-color: #ff3150;
+	--button-color-alt: #fc415d;
+	--title: #ffc400;
+	--padding-t-b: 60px;
+}
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+li {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+}
+/* Start navbar */
+.navbar {
+	background-color: var(--dark-blue);
+}
+.navbar .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+	color: var(--blue-ciel);
+}
+.navbar .search {
+	border-left: 1px solid var(--blue-ciel);
+	color: var(--blue-ciel);
+}
+.main-btn {
+	background-color: var(--button-color);
+	color: var(--title) !important;
+	border: 1px solid var(--button-color);
+	font-weight: 700;
+}
+.main-btn:hover,
+.main-btn:focus {
+	background-color: var(--button-color-alt) !important;
+	/* color: var(--blue-ciel) !important; */
+	color: white !important;
+}
+.navbar .navbar-toggler {
+	color: #fff;
+	padding: 7px 10px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+.navbar .navbar-toggler:focus {
+	box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+	border-color: var(--blue-ciel);
+}
+/* End navbar */
+/* Start landing  */
+.landing {
+	height: calc(100vh - 72px);
+	text-align: center;
+	background-color: var(--dark-blue);
+}
+.landing .content h1 {
+	font-size: 3.4rem;
+	font-weight: normal;
+}
+.landing .content p {
+	color: var(--blue-ciel);
+	margin-bottom: 30px;
+}
+
+/* End landing  */
+/* Start Component  */
+
+.main-title::after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 140px;
+	background-color: var(--blue-ciel);
+	bottom: 0;
+	transform: translatex(-50%);
+}
+.main-title h2 {
+	color: var(--dark-blue);
+}
+.main-title p {
+	color: gray;
+}
+*/
+/* End Component  */
+/* Start services  */
+
+.services .box {
+	text-align: center;
+}
+.services .holder {
+	height: 160px;
+	/* width: 300px; */
+}
+.holder .number {
+	font-size: 11rem;
+	color: lightgrey;
+}
+.services .box .holder .icons {
+	color: var(--blue-ciel);
+}
+.services .box h3 {
+	color: var(--title);
+}
+.services .box p {
+	color: gray;
+	font-size: 0.9rem;
+}
+/* End services  */
+/* Start portfolio  */
+.portfolio {
+	background-color: #eff7fa;
+}
+.portfolio .box-filtre {
+	margin-bottom: 30px;
+}
+.portfolio .box-filtre ul li {
+	color: var(--dark-blue);
+	padding: 10px 15px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+.portfolio .box-filtre ul li.active {
+	background-color: var(--button-color);
+	color: var(--title);
+}
+.portfolio .box-filtre ul li:hover {
+	background-color: var(--button-color-alt);
+	color: white;
+}
+.portfolio .port-box .box {
+	padding: 0 5px;
+	overflow: hidden;
+}
+.portfolio .port-box .box .content {
+	width: calc(100% - 10px);
+	height: calc(100% + 10px);
+	background-color: var(--blue-ciel);
+	top: -2px;
+	left: 5px;
+	bottom: 0;
+	flex-direction: column;
+	transition: 0.3s;
+	transform: translateX(calc(-100% - 10px));
+}
+.portfolio .port-box .box:hover .content {
+	transform: translateX(0);
+}
+.portfolio .port-box .box .content p {
+	color: var(--dark-blue);
+}
+/* End portfolio  */
+/* Start about  */
+.about .description {
+	max-width: 500px;
+	margin: 10px auto 20px;
+}
+.about .text h3 {
+	color: var(--dark-blue);
+}
+/* End about  */
+/* Start team  */
+.team {
+	background-color: #eff7fa;
+}
+.team .desc-team h2 {
+	color: var(--title);
+}
+.team .desc-team p {
+	max-width: 600px;
+}
+.team .box .text .title {
+	background-color: var(--blue-ciel);
+}
+/* End team  */
+/* Start projects  */
+.projects {
+	background-color: var(--dark-blue);
+}
+/* End projects  */
+/* Start subs  */
+.subs {
+	background-color: var(--title);
+}
+.subs input[type="email"] {
+	border: none;
+	border-bottom: 1px solid white;
+}
+.subs input[type="email"]:focus {
+	outline: none;
+}
+.subs ::placeholder {
+	color: white;
+}
+.subs input[type="submit"] {
+	background-color: var(--dark-blue);
+	color: var(--title);
+}
+.subs input[type="submit"]:hover {
+	color: #ffffff;
+}
+/* End subs  */
+.footer {
+	background-color: var(--dark-blue);
+}
+.footer .box .copyright > span {
+	color: var(--blue-ciel);
+}
+.footer .box .copyright div > span {
+	color: var(--title);
+}
+.footer ul li a:hover {
+	color: white !important;
+}
+.footer .social a {
+	height: 35px;
+	width: 35px;
+	border: 1px solid white;
+	color: var(--title);
+	transition: 0.3s;
+}
+.footer .social a:hover {
+	background-color: white;
+	color: var(--dark-blue);
+}
